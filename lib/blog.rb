@@ -41,4 +41,7 @@ class Blog < Sinatra::Base
         haml :index
     end
 =end
+    get "/index" do
+        haml :index
+    end
 end
