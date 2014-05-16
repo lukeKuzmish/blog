@@ -23,7 +23,7 @@ Dir.glob "blog_posts/*.md" do |file|
     
     # route for each article
     get "/posts/#{article.slug}" do
-        haml :post, :locals => { :article => article }
+        haml :post, :locals => { :article => article, :title => article.title }
     end
         puts "/posts/#{article.slug}"
     
@@ -36,5 +36,5 @@ articles.sort_by! { |article| article.date }
 articles.reverse!
 
 get "/" do
-    haml :index, :locals => { :articles => articles }
+    haml :index, :locals => { :articles => articles, :title=> "Luke Kuzmish's blog" }
 end
