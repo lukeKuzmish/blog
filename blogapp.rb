@@ -4,6 +4,7 @@ require 'time'
 require 'yaml'
 require 'rdiscount'
 
+articles = []
 Dir.glob "blog_posts/*.md" do |file|
     # parse meta data
     meta, content = File.read(file).split("\n\n", 2)
@@ -26,8 +27,14 @@ Dir.glob "blog_posts/*.md" do |file|
     end
         puts "/posts/#{article.slug}"
     
+    # add article to articles array
+    articles << article
 end
 
+# sort articles by date, newest first
+articles.sort_by! { |article| article.date }
+articles.reverse!
+
 get "/index" do
-    haml :index
+    haml :index, :locals => { :articles => articles }
 end
