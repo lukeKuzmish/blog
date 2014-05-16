@@ -5,3 +5,4 @@ I am "live" coding this.  You can see the results at [http://sinatra.lukekuzmish
 
 ### update:
 3:17 PM -- having fun figuring out git/github stuff (sarcasm)
+4:12 PM -- posts render markdown! yay!
