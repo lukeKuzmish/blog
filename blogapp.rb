@@ -3,6 +3,7 @@ require 'ostruct'
 require 'time'
 require 'yaml'
 require 'rdiscount'
+require 'shotgun'
 
 articles = []
 Dir.glob "blog_posts/*.md" do |file|
