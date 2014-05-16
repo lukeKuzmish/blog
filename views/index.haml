@@ -4,3 +4,8 @@
 %ul
     %li Sinatra: Up and Running (O'Reilly, 2011)
     %li TutsPlus: An Introduction to Haml and Sinatra
+%h2= "#{articles.length} posts"
+%ul
+- articles.each do |article|
+    %a(href="/posts/#{article.slug}")
+        %li= article.title

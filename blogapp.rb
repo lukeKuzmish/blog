@@ -35,6 +35,6 @@ end
 articles.sort_by! { |article| article.date }
 articles.reverse!
 
-get "/index" do
+get "/" do
     haml :index, :locals => { :articles => articles }
 end
