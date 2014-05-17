@@ -14,7 +14,9 @@ Dir.glob "blog_posts/*.md" do |file|
     article = OpenStruct.new YAML.load(meta)
     article.date = Time.parse article.date.to_s
     article.content = RDiscount.new(content).to_html
-        
+    article.tags_str = article.tags
+    article.tags = article.tags.split(',')
+
     # slug is basically the URL for the post
     # replace spaces with underscores
     # TODO -- add date into slug (in case two blog have the same titles

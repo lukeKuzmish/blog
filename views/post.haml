@@ -1,3 +1,7 @@
 %h1= "#{article.title}"
 %p= "#{article.date}"
 #articlecontents= "#{article.content}"
+#tags
+    %p
+        %span="Tags:"
+        ="#{article.tags_str}"
