@@ -13,5 +13,9 @@ title:
 date: YYYY-MM-DD
 tags: item1, item2, item 3, item4, ...
 
-blogpost here written in [MARKDOWN](http://http://daringfireball.net/projects/markdown/).  lack of wit not ironic or itentional.  no memes.  ...maybe some memes, but no Good Girl Gina.
+blogpost here written in [MARKDOWN](http://http://daringfireball.net/projects/markdown/)
+
+#lack of wit not ironic or intentional.
+no memes.  ...maybe some memes, but no Good Girl Gina.
+Some cat pictures.
 ```
