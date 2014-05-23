@@ -6,7 +6,7 @@ Here's a short story, a piece of [flash fiction](http://en.wikipedia.org/wiki/Fl
 
 ===========================
 
-#Walls
+##Walls
 
 When you removed the pictures from the walls of the old man's house, you couldn't tell there was ever a picture there.  The walls were painted white but there were no finger prints from happy grandchildren, no yellowing from cigars smoked in celebration or cigarettes smoked in frustration.  It's a wonder a man could live to be 83 and have living room walls like this.  Maybe had he lived to 84, maybe even lived just one more week, he would have different walls completely.  Maybe not painted white and immaculate.  Maybe walls in a different house on a different street in a different city or even country.
 

@@ -6,6 +6,10 @@ require 'rdiscount'
 require 'shotgun'
 
 articles = []
+
+set :port, 4567
+set :public_folder, 'public'
+
 Dir.glob "blog_posts/*.md" do |file|
     # parse meta data
     meta, content = File.read(file).split("\n\n", 2)
@@ -40,4 +44,12 @@ articles.reverse!
 
 get "/" do
     haml :index, :locals => { :articles => articles, :title=> "Luke Kuzmish's blog" }
+end
+
+get "/index.html" do
+    redirect '/'
+end
+
+get '/robots.txt' do
+  File.readlines('robots.txt').join
 end
