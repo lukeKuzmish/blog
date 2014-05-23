@@ -9,7 +9,7 @@ To run the app:
 Views are written in Haml.  Blog posts are written in Markdown.  At the top of each post is a bit of YAML.  The format is
 
 ```
-title:
+title: SIX SEX TIPS: Men Everywhere Hate Him. Here's how!
 date: YYYY-MM-DD
 tags: item1, item2, item 3, item4, ...
 
